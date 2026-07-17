@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Location</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>🛡️ Campus Safety</h2>
+</nav>
+
+<div class="container">
+
+<h1>📍 Live Location</h1>
+
+<p>Your current location will be displayed below.</p>
+
+<button class="start-btn" onclick="getLocation()">
+    📍 Get My Location
+</button>
+
+<p id="location" style="margin-top:20px;font-size:20px;color:blue;"></p>
+
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("location").innerHTML =
+        "Geolocation is not supported.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("location").innerHTML =
+    "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</div>
+
+</body>
+</html>
+<footer>
+
+<p>
+© 2026 Smart AI Based Campus Safety System
+</p>
+
+</footer>

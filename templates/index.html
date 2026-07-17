@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AI Based Campus Safety System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <h2>🛡️ Campus Safety</h2>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/camera">Camera</a></li>
+            <li><a href="/alerts">Alerts</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <li><a href="/location">Location</a></li>
+            <li><a href="/about">About</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h1>🚨 Smart AI Based Campus Safety System</h1>
+
+        <p>
+            AI-powered campus security for students, staff, and visitors.
+        </p>
+        <h2>Protecting Students with Artificial Intelligence</h2>
+
+<p>
+Real Time Monitoring<br><br>
+
+Emergency SOS<br><br>
+
+Live Location<br><br>
+
+Instant Alerts<br><br>
+
+AI Detection
+</p>
+
+        <div class="buttons">
+
+    <a href="/camera">
+        <button class="start-btn">
+            📹 Start Camera
+        </button>
+    </a>
+
+    <button class="sos-btn" onclick="window.location.href='/sos'">
+        🚨 Emergency SOS
+    </button>
+
+</div>
+
+        <h3>Status : <span class="safe">🟢 SAFE</span></h3>
+
+    </div>
+    <footer>
+    <p>© 2026 Smart AI Based Campus Safety System</p>
+</footer>
+
+</body>
+</html>

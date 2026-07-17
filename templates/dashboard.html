@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>🛡️ Campus Safety</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/camera">Camera</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/alerts">Alerts</a></li>
+        <li><a href="/location">Location</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>📊 Campus Safety Dashboard</h1>
+
+    <div class="card">
+        <h2>📹 Active Cameras</h2>
+        <h1>01</h1>
+    </div>
+
+    <div class="card">
+        <h2>🚨 Today's Alerts</h2>
+        <h1>{{ alert_count }}</h1>
+    </div>
+
+    <div class="card">
+        <h2>👨 Students Safe</h2>
+        <h1>1200+</h1>
+    </div>
+
+    <div class="card">
+        <h2>🟢 System Status</h2>
+        <h1>ONLINE</h1>
+    </div>
+
+    <div class="buttons">
+        <a href="/camera">
+            <button class="start-btn">📹 Open Camera</button>
+        </a>
+
+        <a href="/alerts">
+            <button class="sos-btn">🚨 View Alerts</button>
+        </a>
+
+        <a href="/contacts">
+            <button class="start-btn">📞 Emergency Contacts</button>
+        </a>
+
+        <a href="/location">
+            <button class="start-btn">📍 Live Location</button>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart AI Based Campus Safety System</p>
+</footer>
+
+</body>
+</html>

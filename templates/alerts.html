@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>🛡️ Campus Safety</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/camera">Camera</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/alerts">Alerts</a></li>
+        <li><a href="/location">Location</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>🚨 Alerts History</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Alert Type</th>
+            <th>Status</th>
+        </tr>
+
+        {% for alert in alerts %}
+        <tr>
+            <td>{{ alert[0] }}</td>
+            <td>{{ alert[1] }}</td>
+            <td>{{ alert[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart AI Based Campus Safety System</p>
+</footer>
+
+</body>
+</html>
