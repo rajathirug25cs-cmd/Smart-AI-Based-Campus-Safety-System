@@ -19,9 +19,12 @@ def save_alert(alert_type, status):
 
 
 # ---------- Camera ----------
-camera = cv2.VideoCapture(0)
+camera = None
 
 def generate_frames():
+    if camera is None:
+        return
+
     while True:
         success, frame = camera.read()
 
@@ -31,13 +34,8 @@ def generate_frames():
         ret, buffer = cv2.imencode(".jpg", frame)
         frame = buffer.tobytes()
 
-        yield (
-            b'--frame\r\n'
-            b'Content-Type: image/jpeg\r\n\r\n' +
-            frame +
-            b'\r\n'
-        )
-
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 # ---------- Routes ----------
 @app.route("/")
