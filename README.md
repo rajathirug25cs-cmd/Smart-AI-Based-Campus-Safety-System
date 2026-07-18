@@ -1,11 +1,17 @@
 # 🛡️ Smart AI Based Campus Safety System
 
+## 🌐 Live Website
+
+https://rajathi2026.pythonanywhere.com
+
 ## 📌 Overview
-The Smart AI Based Campus Safety System is a Flask-based web application developed to improve campus security using AI concepts.
+
+The Smart AI Based Campus Safety System is a Flask-based web application developed to improve campus security using Artificial Intelligence concepts. It provides live camera monitoring, emergency SOS alerts, dashboard analytics, and alert management for students, staff, and visitors.
 
 ## 🚀 Features
+
 - 🏠 Home Page
-- 📹 Live Camera
+- 📹 Live Camera Monitoring
 - 🚨 Emergency SOS
 - 📊 Dashboard
 - 📜 Alert History
@@ -14,11 +20,12 @@ The Smart AI Based Campus Safety System is a Flask-based web application develop
 - 🔐 Login System
 
 ## 🛠 Technologies Used
+
 - Python
 - Flask
 - SQLite
-- HTML
-- CSS
+- HTML5
+- CSS3
 - OpenCV
 - Git
 - GitHub
@@ -26,10 +33,11 @@ The Smart AI Based Campus Safety System is a Flask-based web application develop
 ## ▶️ How to Run
 
 ```bash
+pip install -r requirements.txt
 python app.py
 ```
 
-Open:
+Open your browser:
 
 ```
 http://127.0.0.1:5000
@@ -42,6 +50,7 @@ Smart-AI-Based-Campus-Safety-System/
 │
 ├── app.py
 ├── database.py
+├── requirements.txt
 ├── templates/
 ├── static/
 └── campus_safety.db
@@ -49,5 +58,5 @@ Smart-AI-Based-Campus-Safety-System/
 
 ## 👩‍💻 Developed By
 
-Rajathi
+**Rajathi**  
 Francis Xavier Engineering College
